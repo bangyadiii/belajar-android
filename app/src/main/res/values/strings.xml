@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">modul3</string>
+    <string name="tag_line">Learn Graphic and UI/UX designing in Hindi for free with live projects</string>
+    <string name="create_account">Don’t have an account?</string>
+    <string name="hellow"><u>Register Now</u> </string>
+    <string name="login_google">login googel</string>
+    <string name="login_fb">login FB</string>
+    <string name="logo_app">App Logo</string>
+    <string name="login_twitter">login twitter</string>
+    <string name="welcome_messages">Hello, %1$s!  \n%2$s</string>
+
+
+</resources>

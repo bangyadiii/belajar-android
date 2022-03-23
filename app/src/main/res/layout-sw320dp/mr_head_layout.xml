@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome"
+        android:textColor="@color/gray"
+
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBody"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/ivBread"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBody"
+        app:layout_constraintEnd_toEndOf="@+id/ivBody"
+        app:layout_constraintStart_toStartOf="@+id/ivBody"
+        app:srcCompat="@drawable/beard" />
+
+    <ImageView
+        android:id="@+id/ivMustache"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivBread"
+        app:layout_constraintEnd_toEndOf="@+id/ivBody"
+        app:layout_constraintStart_toStartOf="@+id/ivBody"
+        app:layout_constraintTop_toTopOf="@+id/ivBread"
+        app:srcCompat="@drawable/moustache" />
+
+    <ImageView
+        android:id="@+id/ivEyes"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivMustache"
+        app:layout_constraintEnd_toEndOf="@+id/ivBody"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/ivBody"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/ivEyebrow"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivEyes"
+        app:layout_constraintEnd_toEndOf="@+id/ivBody"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/ivBody"
+        app:srcCompat="@drawable/eyebrow" />
+
+    <ImageView
+        android:id="@+id/ivHair"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivEyes"
+        app:layout_constraintEnd_toEndOf="@+id/ivBody"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/ivBody"
+        app:srcCompat="@drawable/hair" />
+
+    <CheckBox
+        android:id="@+id/cbAlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="48dp"
+        android:text="Alis"
+        app:layout_constraintStart_toStartOf="@+id/cbRambut"
+        app:layout_constraintTop_toBottomOf="@+id/cbRambut" />
+
+    <CheckBox
+        android:id="@+id/cbRambut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:minHeight="48dp"
+        android:text="Rambut"
+        app:layout_constraintEnd_toStartOf="@+id/cbKumis"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBody" />
+
+    <CheckBox
+        android:id="@+id/cbKumis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Kumis"
+        app:layout_constraintBottom_toBottomOf="@+id/cbRambut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cbRambut" />
+
+    <CheckBox
+        android:id="@+id/cbJanggut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Janggut"
+        app:layout_constraintBottom_toBottomOf="@+id/cbAlis"
+        app:layout_constraintStart_toStartOf="@+id/cbKumis" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:text="Contact Mr Head"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAlis" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
