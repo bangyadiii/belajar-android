@@ -78,6 +78,7 @@
         app:layout_constraintStart_toStartOf="@+id/etEmail"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
+
     <Button
         android:id="@+id/btLogin"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -90,9 +91,9 @@
         android:textColor="@color/ocean_blue"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/etPassword"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
 
     <TextView
         android:id="@+id/textView3"
@@ -156,7 +157,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/roboto"
         android:text="@string/create_account"
-        android:textColor="@color/white"
+        android:textColor="#212121"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/googleButton"
         app:layout_constraintTop_toBottomOf="@id/imageButton4" />
